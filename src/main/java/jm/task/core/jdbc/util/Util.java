@@ -15,11 +15,11 @@ public class Util {
 
         try {
             connection = DriverManager.getConnection(url, user, password);
-           // System.out.println("Подключение к базе данных успешно установлено!");
+            // System.out.println("Подключение к базе данных успешно установлено!");
 
         } catch (SQLException e) {
             System.out.println("Ошибка при подключении к базе данных:" + e);
-            throw new RuntimeException (e);
+            throw new RuntimeException(e);
         }
         return connection;
     } // реализуйте настройку соеденения с БД

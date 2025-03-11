@@ -9,7 +9,7 @@ public class Main {
     private static final UserService userService = new UserServiceImpl();
     public static void main(String[] args) {
 
-      userService.createUsersTable();
+        userService.createUsersTable();
 
         userService.saveUser("James", "Chuka", (byte) 34);
         userService.saveUser("Jon", "Anderson", (byte) 27);
@@ -18,9 +18,8 @@ public class Main {
 
         userService.getAllUsers();
 
+        userService.cleanUsersTable();
 
-       userService.cleanUsersTable();
-
-       userService.dropUsersTable();// реализуйте алгоритм здесь
+        userService.dropUsersTable(); // реализуйте алгоритм здесь
     }
 }
